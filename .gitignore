@@ -1,0 +1,12 @@
+*.log
+*.swo
+*.swd
+*.swp
+*/**/*.o
+
+Makefile
+CMakeCache.txt
+*.cmake
+CMakeFiles
+install_manifest.txt
+build
