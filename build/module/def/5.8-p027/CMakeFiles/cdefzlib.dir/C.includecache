@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../module/def/5.8-p027/cdef/defiTypedefs.h
+
+../module/def/5.8-p027/cdef/defrReader.h
+stdio.h
+-
+defiTypedefs.h
+../module/def/5.8-p027/cdef/defiTypedefs.h
+
+/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/module/def/5.8-p027/cdefzlib/cdefzlib.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+limits.h
+-
+sys/types.h
+-
+sys/stat.h
+-
+zlib.h
+/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/module/def/5.8-p027/cdefzlib/zlib.h
+defzlib.h
+/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/module/def/5.8-p027/cdefzlib/defzlib.h
+defrReader.h
+/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/module/def/5.8-p027/cdefzlib/defrReader.h
+
+/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/module/def/5.8-p027/cdefzlib/defzlib.h
+

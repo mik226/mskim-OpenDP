@@ -477,9 +477,15 @@ int circuit::non_group_refine() {
 //Flip by MSK
 //isFlipped = true --> S, FN
 //isFlipped = false --> N, FS
+//Greedy algorithm to reduce HPWL
 void circuit::flip_cells() {
 
-  cout << "Cell Flipping..." << endl;
+  cout << "HPWL Optimization by Cell Flipping..." << endl;
+
+  double init_HPWL=HPWL("");
+  double final_HPWL=0.0;
+
+  unsigned cnt=0;
 
   for(int i = 0; i < cells.size(); i++) {
     cell* theCell = &cells[i];
@@ -487,41 +493,54 @@ void circuit::flip_cells() {
 
     string org_orient = theCell->cellorient;
     double org_HPWL=HPWL("");
-    double final_HPWL=0.0;
 
     if (!strcmp(org_orient.c_str(),"N")) {
         theCell->isFlipped=true;
         update_pin_offset(theCell);
         final_HPWL=HPWL("");
+//        cout << "ORG HPWL: " << org_HPWL << endl;
+//        cout << "FINAL HPWL: " << final_HPWL << endl;
+
         if (org_HPWL<=final_HPWL) {
             theCell->isFlipped=false;
             theCell->cellorient="N";
             update_pin_offset(theCell);
         } else {
-            theCell->isFlipped=true;
+            //theCell->isFlipped=true;
             theCell->cellorient="FN";
             cout << theCell->name << ": its orientation is changed from N to FN" << endl;
+            cnt++;
         }
 
     } else if (!strcmp(org_orient.c_str(),"FS")) {
         theCell->isFlipped=true;
         update_pin_offset(theCell);
         final_HPWL=HPWL("");
+//        cout << "ORG HPWL: " << org_HPWL << endl;
+//        cout << "FINAL HPWL: " << final_HPWL << endl;
+
         if (org_HPWL<=final_HPWL) {
             theCell->isFlipped=false;
             theCell->cellorient="FS";
             update_pin_offset(theCell);
         } else {
-            theCell->isFlipped=true;
+            //theCell->isFlipped=true;
             theCell->cellorient="S";
             cout << theCell->name << ": its orientation is changed from FS to S" << endl;
+            cnt++;
         }
 
     } else {
         cout << "WARNING: " << theCell->name << "has an unsupported orientation !" << endl;
     }
-    
   }
+
+  final_HPWL=HPWL("");
+  cout << "BEFORE optimization by flipping (HPWL): " << init_HPWL << endl;
+  cout << "AFTER optimization by flipping (HPWL): " << final_HPWL << endl;
+  cout << "Improvement: " << 100.0-((final_HPWL/init_HPWL)*100) << "%" << endl;
+  cout << "Total #flipped cells: " << cnt << endl;
+
   return;
 }
 
@@ -545,6 +564,7 @@ void circuit::update_pin_offset(cell* theCell) {
         }
     } else {
         for (OPENDP_HASH_MAP< string, unsigned >::iterator iter = theCell->ports.begin(); iter != theCell->ports.end(); ++iter) {
+            pin_id=iter->second;
             pin* thePin = &pins[pin_id];
             thePin->x_offset = thePin->x_init_offset;
             thePin->y_offset = thePin->y_init_offset;

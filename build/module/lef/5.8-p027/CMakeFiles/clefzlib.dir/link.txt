@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../../module/lef/5.8-p027/lib/libclefzlib.a  CMakeFiles/clefzlib.dir/clefzlib/clefzlib.c.o
+/usr/bin/ranlib ../../../../module/lef/5.8-p027/lib/libclefzlib.a

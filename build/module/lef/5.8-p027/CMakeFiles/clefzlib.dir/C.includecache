@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../module/lef/5.8-p027/clef/lefiTypedefs.h
+
+../module/lef/5.8-p027/clef/lefrReader.h
+stdio.h
+-
+lefiTypedefs.h
+../module/lef/5.8-p027/clef/lefiTypedefs.h
+
+/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/module/lef/5.8-p027/clefzlib/clefzlib.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+limits.h
+-
+sys/types.h
+-
+sys/stat.h
+-
+zlib.h
+/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/module/lef/5.8-p027/clefzlib/zlib.h
+lefzlib.h
+/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/module/lef/5.8-p027/clefzlib/lefzlib.h
+lefrReader.h
+/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/module/lef/5.8-p027/clefzlib/lefrReader.h
+
+/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/module/lef/5.8-p027/clefzlib/lefzlib.h
+
