@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DefBisonTarget"
   "../../../../module/def/5.8-p027/def/def.tab.cpp"
+  "CMakeFiles/DefBisonTarget"
 )
 
 # Per-language clean rules from dependency scanning.

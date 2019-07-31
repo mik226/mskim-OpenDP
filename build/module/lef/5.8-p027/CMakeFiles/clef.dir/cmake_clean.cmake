@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "../../../../module/lef/5.8-p027/lib/libclef.a"
+  "../../../../module/lef/5.8-p027/lib/libclef.pdb"
   "CMakeFiles/clef.dir/clef/lefiEncryptExt.c.o"
   "CMakeFiles/clef.dir/clef/lefiTBInt.c.o"
   "CMakeFiles/clef.dir/clef/xlefiArray.cpp.o"
@@ -16,10 +18,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/clef.dir/clef/xlefiVia.cpp.o"
   "CMakeFiles/clef.dir/clef/xlefiViaRule.cpp.o"
   "CMakeFiles/clef.dir/clef/xlefrReader.cpp.o"
-  "CMakeFiles/clef.dir/clef/xlefwWriterCalls.cpp.o"
   "CMakeFiles/clef.dir/clef/xlefwWriter.cpp.o"
-  "../../../../module/lef/5.8-p027/lib/libclef.pdb"
-  "../../../../module/lef/5.8-p027/lib/libclef.a"
+  "CMakeFiles/clef.dir/clef/xlefwWriterCalls.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

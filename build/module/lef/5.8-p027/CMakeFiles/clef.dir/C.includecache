@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/module/lef/5.8-p027/clef/lefiEncryptExt.c
+/Users/minsoo/WORKSPACE/01_opendp/mskim-OpenDP/module/lef/5.8-p027/clef/lefiEncryptExt.c
 stdlib.h
 -
 
-/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/module/lef/5.8-p027/clef/lefiTBInt.c
+/Users/minsoo/WORKSPACE/01_opendp/mskim-OpenDP/module/lef/5.8-p027/clef/lefiTBInt.c
 string.h
 -
 

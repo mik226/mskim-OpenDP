@@ -1,4 +1,4 @@
-# Install script for directory: /home/mskim/01_OpenDP/01_flip/mskim-OpenDP
+# Install script for directory: /Users/minsoo/WORKSPACE/01_opendp/mskim-OpenDP
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,11 +27,6 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
-# Install shared libraries without execute permission?
-if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
-endif()
-
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -39,35 +34,33 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES
-    "/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/src/circuit.h"
-    "/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/src/mymeasure.h"
+    "/Users/minsoo/WORKSPACE/01_opendp/mskim-OpenDP/src/circuit.h"
+    "/Users/minsoo/WORKSPACE/01_opendp/mskim-OpenDP/src/mymeasure.h"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/opendp" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/opendp")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/opendp"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/build/opendp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/minsoo/WORKSPACE/01_opendp/mskim-OpenDP/build/opendp")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/opendp" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/opendp")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/opendp")
+      execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/strip" -u -r "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/opendp")
     endif()
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/build/libopendp.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/minsoo/WORKSPACE/01_opendp/mskim-OpenDP/build/libopendp.a")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libopendp.a" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libopendp.a")
+    execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libopendp.a")
+  endif()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/build/module/def/5.8-p027/cmake_install.cmake")
-  include("/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/build/module/lef/5.8-p027/cmake_install.cmake")
+  include("/Users/minsoo/WORKSPACE/01_opendp/mskim-OpenDP/build/module/def/5.8-p027/cmake_install.cmake")
+  include("/Users/minsoo/WORKSPACE/01_opendp/mskim-OpenDP/build/module/lef/5.8-p027/cmake_install.cmake")
 
 endif()
 
@@ -79,5 +72,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/minsoo/WORKSPACE/01_opendp/mskim-OpenDP/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

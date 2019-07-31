@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cdefzlib.dir/cdefzlib/cdefzlib.c.o"
-  "../../../../module/def/5.8-p027/lib/libcdefzlib.pdb"
   "../../../../module/def/5.8-p027/lib/libcdefzlib.a"
+  "../../../../module/def/5.8-p027/lib/libcdefzlib.pdb"
+  "CMakeFiles/cdefzlib.dir/cdefzlib/cdefzlib.c.o"
 )
 
 # Per-language clean rules from dependency scanning.

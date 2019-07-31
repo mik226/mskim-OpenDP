@@ -142,7 +142,7 @@ lefiUser.hpp
 lefiUtil.hpp
 ../module/lef/5.8-p027/lef/lefiUtil.hpp
 
-/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/module/lef/5.8-p027/lefzlib/lefzlib.cpp
+/Users/minsoo/WORKSPACE/01_opendp/mskim-OpenDP/module/lef/5.8-p027/lefzlib/lefzlib.cpp
 stdio.h
 -
 stdlib.h
@@ -156,11 +156,11 @@ sys/types.h
 sys/stat.h
 -
 zlib.h
-/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/module/lef/5.8-p027/lefzlib/zlib.h
+/Users/minsoo/WORKSPACE/01_opendp/mskim-OpenDP/module/lef/5.8-p027/lefzlib/zlib.h
 lefzlib.hpp
-/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/module/lef/5.8-p027/lefzlib/lefzlib.hpp
+/Users/minsoo/WORKSPACE/01_opendp/mskim-OpenDP/module/lef/5.8-p027/lefzlib/lefzlib.hpp
 lefrReader.hpp
-/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/module/lef/5.8-p027/lefzlib/lefrReader.hpp
+/Users/minsoo/WORKSPACE/01_opendp/mskim-OpenDP/module/lef/5.8-p027/lefzlib/lefrReader.hpp
 
-/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/module/lef/5.8-p027/lefzlib/lefzlib.hpp
+/Users/minsoo/WORKSPACE/01_opendp/mskim-OpenDP/module/lef/5.8-p027/lefzlib/lefzlib.hpp
 

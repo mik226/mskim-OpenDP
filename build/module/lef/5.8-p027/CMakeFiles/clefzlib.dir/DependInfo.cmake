@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/module/lef/5.8-p027/clefzlib/clefzlib.c" "/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/build/module/lef/5.8-p027/CMakeFiles/clefzlib.dir/clefzlib/clefzlib.c.o"
+  "/Users/minsoo/WORKSPACE/01_opendp/mskim-OpenDP/module/lef/5.8-p027/clefzlib/clefzlib.c" "/Users/minsoo/WORKSPACE/01_opendp/mskim-OpenDP/build/module/lef/5.8-p027/CMakeFiles/clefzlib.dir/clefzlib/clefzlib.c.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH

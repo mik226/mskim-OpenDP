@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/LefBisonTarget"
   "../../../../module/lef/5.8-p027/lef/lef.tab.cpp"
+  "CMakeFiles/LefBisonTarget"
 )
 
 # Per-language clean rules from dependency scanning.

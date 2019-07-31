@@ -234,7 +234,7 @@ defiDefs.hpp
 defiUser.hpp
 ../module/def/5.8-p027/def/defiUser.hpp
 
-/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/module/def/5.8-p027/defzlib/defzlib.cpp
+/Users/minsoo/WORKSPACE/01_opendp/mskim-OpenDP/module/def/5.8-p027/defzlib/defzlib.cpp
 stdio.h
 -
 stdlib.h
@@ -248,13 +248,13 @@ sys/types.h
 sys/stat.h
 -
 zlib.h
-/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/module/def/5.8-p027/defzlib/zlib.h
+/Users/minsoo/WORKSPACE/01_opendp/mskim-OpenDP/module/def/5.8-p027/defzlib/zlib.h
 defzlib.hpp
-/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/module/def/5.8-p027/defzlib/defzlib.hpp
+/Users/minsoo/WORKSPACE/01_opendp/mskim-OpenDP/module/def/5.8-p027/defzlib/defzlib.hpp
 defrReader.hpp
-/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/module/def/5.8-p027/defzlib/defrReader.hpp
+/Users/minsoo/WORKSPACE/01_opendp/mskim-OpenDP/module/def/5.8-p027/defzlib/defrReader.hpp
 
-/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/module/def/5.8-p027/defzlib/defzlib.hpp
+/Users/minsoo/WORKSPACE/01_opendp/mskim-OpenDP/module/def/5.8-p027/defzlib/defzlib.hpp
 defiDefs.hpp
-/home/mskim/01_OpenDP/01_flip/mskim-OpenDP/module/def/5.8-p027/defzlib/defiDefs.hpp
+/Users/minsoo/WORKSPACE/01_opendp/mskim-OpenDP/module/def/5.8-p027/defzlib/defiDefs.hpp
 
